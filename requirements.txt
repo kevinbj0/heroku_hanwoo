@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+python-dotenv
+psycopg2-binary
+pandas
+langchain-core
+langgraph
+fuzzywuzzy
+python-Levenshtein
+openai
+langsmith
+typing-extensions
+pydantic
+python-multipart
+gunicorn
