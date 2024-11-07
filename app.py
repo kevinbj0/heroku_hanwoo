@@ -326,19 +326,19 @@ class ConversationStage:
 def init_databases():
     # PostgreSQL 연결 설정
     customer_conn = psycopg2.connect(
-        host="localhost",
-        database="monicaBeef",
-        user="postgres",
-        password="1234"
+        host=os.getenv("host"),
+        database=os.getenv("database"),
+        user=os.getenv("user"),
+        password=os.getenv("password")
     )
     customer_cursor = customer_conn.cursor()
  
     # 한우 데이터베이스
     hanwoo_conn = psycopg2.connect(
-        host="localhost",
-        database="monicaBeef",
-        user="postgres",
-        password="1234"
+        host=os.getenv("host"),
+        database=os.getenv("database"),
+        user=os.getenv("user"),
+        password=os.getenv("password")
     )
     hanwoo_cursor = hanwoo_conn.cursor()
  
